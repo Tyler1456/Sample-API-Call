@@ -48,7 +48,7 @@ async function sendCSV() {
     var input = document.querySelector('input[type="file"]')
 
     // let response = await fetch(`http://127.0.0.1:4000/sumJSON?jsonCSV=${JSON.stringify(uploaddata)}`, {
-    let response = await fetch(`http://testmodel12345.herokuapp.com/sumJSON?jsonCSV=${JSON.stringify(uploaddata)}`, {
+    let response = await fetch(`https://testmodel12345.herokuapp.com/sumJSON?jsonCSV=${JSON.stringify(uploaddata)}`, {
         method: 'POST',
     })
     let data = await response.text();
